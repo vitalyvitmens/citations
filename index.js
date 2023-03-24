@@ -26,7 +26,6 @@ setTimeout(() => {
     '_____ В.И. Ленин _____',
     'white',
     'rgb(21, 38, 117)',
-    '3rem'
   )
 }, 6500)
 
@@ -34,10 +33,9 @@ function addStyleTo(node, text, color, bgcolor, fontSize) {
   node.textContent = text
   node.style.color = color
   node.style.fontStyle = 'italic'
-  node.style.fontSize = '40px'
+  // node.style.fontSize = '40px'
   node.style.textAlign = 'center'
   node.style.backgroundColor = bgcolor
-  node.style.padding = '2rem'
   if (fontSize) {
     node.style.fontSize = fontSize
   }
