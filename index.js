@@ -1,5 +1,5 @@
 const heading = document.getElementById('home')
-const heading2 = document.querySelector('#sub-home')
+const heading2 = document.querySelector('#sub-home') 
 console.dir(heading2)
 const h2List = document.querySelectorAll('h2')
 console.log(h2List)
@@ -33,9 +33,9 @@ function addStyleTo(node, text, color, bgcolor, fontSize) {
   node.textContent = text
   node.style.color = color
   node.style.fontStyle = 'italic'
-  // node.style.fontSize = '40px'
   node.style.textAlign = 'center'
   node.style.backgroundColor = bgcolor
+  node.style.padding = '2rem'
   if (fontSize) {
     node.style.fontSize = fontSize
   }
@@ -43,7 +43,7 @@ function addStyleTo(node, text, color, bgcolor, fontSize) {
 
 heading.onclick = () => {
   if (heading4.style.color === 'white') {
-    heading4.style.color = 'white'
+    heading4.style.color = 'grey'
     heading4.style.backgroundColor = 'black'
     heading.textContent = 'ДА РОЖИ'
     heading2.textContent = 'ТО У НАС'
@@ -61,7 +61,7 @@ heading.onclick = () => {
 
 heading2.onclick = () => {
   if (heading4.style.color === 'white') {
-    heading4.style.color = 'white'
+    heading4.style.color = 'grey'
     heading4.style.backgroundColor = 'black'
     heading.textContent = 'СПАСИБО,'
     heading2.textContent = 'Я ПЕШКОМ'
@@ -79,7 +79,7 @@ heading2.onclick = () => {
 
 heading3.onclick = () => {
   if (heading4.style.color === 'white') {
-    heading4.style.color = 'white'
+    heading4.style.color = 'grey'
     heading4.style.backgroundColor = 'black'
     heading.textContent = 'НУ ТЫ ЭТО...'
     heading2.textContent = 'ЗАХОДИ,'
@@ -97,7 +97,7 @@ heading3.onclick = () => {
 
 heading4.onclick = () => {
   if (heading4.style.color === 'white') {
-    heading4.style.color = 'white'
+    heading4.style.color = 'grey'
     heading4.style.backgroundColor = 'black'
     heading.textContent = 'КАК'
     heading2.textContent = 'СТЕМНЕЕТ'
@@ -115,7 +115,7 @@ heading4.onclick = () => {
 
 heading4.addEventListener('dblclick', () => {
   if (heading4.style.color === 'white') {
-    heading4.style.color = 'white'
+    heading4.style.color = 'grey'
     heading4.style.backgroundColor = 'black'
     heading.textContent = 'А ОСТАЛЬНОЕ'
     heading2.textContent = 'МНЕ'
